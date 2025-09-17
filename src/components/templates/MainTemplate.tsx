@@ -1,13 +1,15 @@
-import { FC, ReactNode } from "react";
+import { ReactNode } from "react";
+import { Navbar } from "../organisms/Navbar";
 
-interface MainTemplateProps {
-  children: ReactNode;
-}
+type MainTemplateProps = { children: ReactNode };
 
-const MainTemplate: FC<MainTemplateProps> = ({ children }) => {
+const MainTemplate = ({ children }: MainTemplateProps) => {
   return (
-    <main className="bg-black text-white font-sans h-screen flex items-center justify-center">
-      {children}
+    <main className="bg-gray-950 text-white font-sans min-h-screen">
+      <Navbar/>
+      <div className="pt-20">
+        {children}
+      </div>
     </main>
   );
 };

@@ -6,24 +6,18 @@ import { Cursor } from "../atoms/Cursor";
 
 const lines: string[] = [
   "<!DOCTYPE html>",
-  '<html lang="es">',
-  "<head>",
-  '  <meta charset="UTF-8">',
-  '  <meta name="viewport" content="width=device-width, initial-scale=1.0">',
-  "  <title>Portafolio</title>",
-  "</head>",
-  '<body class="bg-black text-white font-sans">',
-  '  <div class="container mx-auto px-4">',
-  '    <header class="mb-8">',
-  '      <h1 class="text-5xl font-bold">',
-  '        Hola, soy <span class="text-blue-400">Diego Humberto Salgado</span>',
-  "      </h1>",
-  '      <p class="text-xl text-gray-300">',
-  "        Ingeniero de Software especializado en desarrollo web y backend.",
-  "      </p>",
+  "<html lang='es'>",
+  "  <head>",
+  "    <title>Portafolio</title>",
+  "  </head>",
+  "  <body>",
+  '    <header>',
+  '      <h1>Hola, soy',
+  '         <span class="text-blue-400">Diego Humberto Salgado</span>',
+  '      </h1>',
+  '      <p>Ingeniero de Software especializado en desarrollo web y backend.</p>',
   "    </header>",
-  "  </div>",
-  "</body>",
+  "  </body>",
   "</html>",
 ];
 
@@ -54,7 +48,7 @@ export const ConsoleBody = () => {
   }, [charIndex, lineIndex])
 
   return (
-    <div className="p-4 whitespace-pre text-gray-200 overflow-x-auto max-w-full font-mono text-sm">
+    <div className="p-4 whitespace-pre text-gray-200 overflow-x-auto max-w-full font-mono text-sm bg-gray-900 rounded-lg w-full h-80">
       {displayedLines.map((line, i) => (
         <Line key={i} text={line} />
       ))}
