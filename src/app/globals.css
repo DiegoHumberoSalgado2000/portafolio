@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+@keyframes blink {
+  50% {
+    background: transparent;
+  }
+}
+
+.animate-blink {
+  animation: blink 0.8s infinite;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
