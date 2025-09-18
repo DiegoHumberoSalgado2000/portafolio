@@ -6,23 +6,26 @@ import MainTemplate from "@/components/templates/MainTemplate";
 export default function Home() {
   return (
     <MainTemplate>
-      <div className="flex flex-col gap-8">
-        <section className="grid md:grid-cols-2 gap-10 px-8 py-12 max-w-7xl mx-auto items-center">
+      <div className="flex flex-col gap-16">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-10 px-4 sm:px-8 py-12 max-w-7xl mx-auto items-center">
           <div>
-            <h1 className="text-5xl font-bold mb-4">
-              Hola, soy <span className="text-blue-400">Diego Humberto Salgado</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+              Hola, soy{" "}
+              <span className="text-blue-400">Diego Humberto Salgado</span>
             </h1>
-            <p className="text-xl text-gray-300">
+            <p className="text-lg sm:text-xl text-gray-300">
               Ingeniero de Software especializado en desarrollo web y backend.
             </p>
           </div>
           <CodeConsole />
+          <div className="col-span-1 md:col-span-2 w-full">
+            <SkillsCarousel />
+          </div>
         </section>
-        <section className="px-8 py-16 max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">Mis Skills</h2>
-          <SkillsCarousel />
+
+        <section className="px-4 sm:px-8 max-w-7xl mx-auto w-full">
+          <ExpertiseSection />
         </section>
-        <ExpertiseSection />
       </div>
     </MainTemplate>
   );
