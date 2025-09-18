@@ -1,3 +1,4 @@
+import { SkillsCarousel } from "@/components/molecules/SkillsCarousel";
 import CodeConsole from "@/components/organisms/CodeConsole";
 import { ExpertiseSection } from "@/components/organisms/ExpertiseSection";
 import MainTemplate from "@/components/templates/MainTemplate";
@@ -17,7 +18,11 @@ export default function Home() {
           </div>
           <CodeConsole />
         </section>
-        <ExpertiseSection/>
+        <section className="px-8 py-16 max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold mb-8 text-center">Mis Skills</h2>
+          <SkillsCarousel />
+        </section>
+        <ExpertiseSection />
       </div>
     </MainTemplate>
   );
