@@ -33,7 +33,7 @@ export const SkillsCarousel = () => {
             key={index}
             className="flex flex-col items-center justify-center 
             flex-[0_0_auto] 
-            min-w-[90px] sm:min-w[100px] md:min-w-[110px] lg:min-w-[120px] 
+            min-w-[90px] sm:min-w-[100px] md:min-w-[110px] lg:min-w-[120px] 
             h-20 sm:h-24 md:h-28
             bg-gray-800 rounded-xl shadow-md 
             hover:scale-105 transition-transform cursor-pointer"
