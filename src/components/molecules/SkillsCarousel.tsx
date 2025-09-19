@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import {
     SiTypescript,
     SiReact,
@@ -9,19 +10,38 @@ import {
     SiJavascript,
     SiMysql,
     SiGit,
-    SiPython
+    SiPhp,
+    SiSpringboot,
+    SiAngular,
 } from "react-icons/si";
 
 const skills = [
     { name: "TypeScript", icon: <SiTypescript className="text-blue-500" size={40} /> },
     { name: "React", icon: <SiReact className="text-cyan-400" size={40} /> },
-    {name: "Python", icon:<SiPython className="text-yellow-400" size={40}/>},
+    { name: "Python", icon:(
+      <Image 
+      src="/python-logo.png"
+      alt="Python"
+      className="rounded-full"
+      width={40}
+      height={40}/>
+    ) },
     { name: "NextJS", icon: <SiNextdotjs className="text-white" size={40} /> },
     { name: "Tailwind", icon: <SiTailwindcss className="text-sky-400" size={40} /> },
-    { name: "Java", icon: <SiOpenjdk className="text-red-600" size={40} /> },
+    { name: "Java", icon:(
+      <Image
+      src="/java-logo.png"
+      alt="Java"
+      width={45}
+      height={45}/>
+    ) },
     { name: "JavaScript", icon: <SiJavascript className="text-yellow-400" size={40} /> },
     { name: "MySQL", icon: <SiMysql className="text-blue-600" size={40} /> },
     { name: "Git", icon: <SiGit className="text-orange-500" size={40} /> },
+    {name: "Php", icon: <SiPhp className="text-violet-500" size={40}/>},
+    {name: "Spring Boot", icon: <SiSpringboot className="text-green-500" size={40}/>},
+    {name: "Angular", icon:<SiAngular className="text-red-600" size={40}/>}
+
 ];
 
 export const SkillsCarousel = () => {

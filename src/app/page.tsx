@@ -1,6 +1,7 @@
 import { SkillsCarousel } from "@/components/molecules/SkillsCarousel";
 import CodeConsole from "@/components/organisms/CodeConsole";
 import { ExpertiseSection } from "@/components/organisms/ExpertiseSection";
+import { WorkSection } from "@/components/organisms/WorkSection";
 import MainTemplate from "@/components/templates/MainTemplate";
 
 export default function Home() {
@@ -25,6 +26,10 @@ export default function Home() {
 
         <section className="px-4 sm:px-8 max-w-7xl mx-auto w-full">
           <ExpertiseSection />
+        </section>
+
+        <section className="px-4 sm:px-8 max-w-7xl mx-auto w-full">
+          <WorkSection/>
         </section>
       </div>
     </MainTemplate>
