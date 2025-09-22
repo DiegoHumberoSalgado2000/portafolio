@@ -3,7 +3,7 @@ type LineProps = {
 };
 
 export const Line = ({ text }: LineProps) => {
-  return <div>{text}</div>;
-};
+  return <div>{text}</div>
+}
 
 

@@ -2,40 +2,41 @@
 
 /* Cursor parpadeante */
 @keyframes blink {
-  50% {
-    background: transparent;
-  }
+    50% {
+        background: transparent;
+    }
 }
 
 .animate-blink {
-  animation: blink 0.8s infinite;
+    animation: blink 0.8s infinite;
 }
 
 /* Animación de scroll infinito */
 @keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .animate-scroll {
-  animation: scroll 20s linear infinite;
+    animation: scroll 20s linear infinite;
 }
 
 /* Ocultar scrollbar */
 .scrollbar-hide::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
+
 .scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: Arial, Helvetica, sans-serif;
 }
