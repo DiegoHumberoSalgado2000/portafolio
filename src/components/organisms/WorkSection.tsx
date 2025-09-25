@@ -11,7 +11,7 @@ export const WorkSection = () => {
     {
       title: 'E-commerce App',
       description: 'Tienda online con carrito, pagos y panel de admin.',
-      image: '/',
+      image: '/ApiRest.png',
 
     },
     {
